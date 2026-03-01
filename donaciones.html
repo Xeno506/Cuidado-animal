@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<div class="contenedor-principal">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zootopia</title>
+        <link rel="icon" href="Imgs/zootopia.png" type="image/x-icon">
+        <link rel="stylesheet" href="Styles/styles.css" type="text/css">
+        <link rel="stylesheet" href="Styles/media.css" type="text/css">
+        
+    </head>
+
+    <body>
+        <header>
+            <h1>Bienvenido a Zootopia</h1>
+            <nav class="menu-principal">
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="animales.html">Animales</a></li>
+                    <li><a href="conservacion.html">Conservación</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="horarios.html">Horarios y Precios</a></li>
+                    <li><a href="mapa.html">Mapa del Zoológico</a></li>
+                    <li><a href="donaciones.html">Donaciones</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="apoyo">
+            <h2>Apoya Nuestro Santuario</h2>
+            <p>
+                Tu colaboración nos permite continuar con el rescate, rehabilitación y cuidado de especies silvestres.
+                Puedes apoyar mediante apadrinamiento o donaciones generales.
+            </p>
+
+            <div class="bloque">
+                <h3>Programa de Apadrinamiento</h3>
+                <p>
+                    Apadrina una especie rescatada y contribuye directamente a su alimentación y atención veterinaria.
+                </p>
+
+                <form id="formApadrinar">
+                    <label>Nombre completo:</label>
+                    <input type="text" id="nombreApadrinar" required>
+
+                    <label>Correo electrónico:</label>
+                    <input type="email" id="correoApadrinar" required>
+
+                    <label>Especie a apadrinar:</label>
+                    <select id="especie">
+                        <option value="León">León</option>
+                        <option value="Ciervo">Ciervo</option>
+                        <option value="Guacamaya">Guacamaya</option>
+                        <option value="Serpiente">Serpiente</option>
+                    </select>
+
+                    <button type="submit">Confirmar Apadrinamiento</button>
+                </form>
+
+                <p id="mensajeApadrinar"></p>
+            </div>
+
+            <div class="bloque">
+                <h3>Donaciones Generales</h3>
+                <p>
+                    Tu aporte ayuda a mejorar las instalaciones del santuario y fortalecer nuestros programas de conservación.
+                </p>
+
+                <form id="formDonacion">
+                    <label>Monto a donar: US$</label>
+                    <input type="number" id="montoDonacion" min="1" required>
+
+                    <button type="submit">Realizar Donación</button>
+                </form>
+
+                <p id="mensajeDonacion"></p>
+            </div>
+            <div class="meta-container">
+            <h4>Meta mensual: $1000</h4>
+            <div class="barra-fondo">
+                <div class="barra-progreso" id="barraProgreso"></div>
+            </div>
+            <p>Total actual: $<span id="contadorAnimado">0</span></p>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; 2024 Zootopia. Todos los derechos reservados.</p>
+        </footer>
+
+        <script type="text/javascript" src="Js/home.js"></script>
+    </body>
+</div>
+</html>

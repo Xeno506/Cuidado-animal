@@ -196,3 +196,65 @@ blockquote
 .reptiles { background-color: #196f3d; }
 .aves { background-color: #f39c12; }
 .felinos { background-color: #b9770e; }
+
+.apoyo 
+{
+    padding: 40px 20px;
+}
+
+.bloque 
+{
+    background-color: #f4f8e8;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+form 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, button 
+{
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button 
+{
+    background-color: #2f8f2f;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover 
+{
+    background-color: #1e6f1e;
+}
+
+.meta-container 
+{
+    margin-top: 20px;
+}
+
+.barra-fondo 
+{
+    width: 100%;
+    height: 25px;
+    background-color: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.barra-progreso 
+{
+    height: 100%;
+    width: 0%;
+    background-color: #2f8f2f;
+    transition: width 0.5s ease-in-out;
+}

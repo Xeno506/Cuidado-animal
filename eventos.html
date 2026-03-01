@@ -9,7 +9,6 @@
         <link rel="icon" href="Imgs/zootopia.png" type="image/x-icon">
         <link rel="stylesheet" href="Styles/styles.css" type="text/css">
         <link rel="stylesheet" href="Styles/media.css" type="text/css">
-        <script type="text/javascript" src="Js/home.js"></script>
     </head>
 
     <body>
@@ -23,6 +22,7 @@
                     <li><a href="eventos.html">Eventos</a></li>
                     <li><a href="horarios.html">Horarios y Precios</a></li>
                     <li><a href="mapa.html">Mapa del Zoológico</a></li>
+                    <li><a href="donaciones.html">Donaciones</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
@@ -62,15 +62,46 @@
         <section id="talleres">
             <article class="destacados">
                 <h2>Talleres Educativos</h2>
-                <p>Participa en nuestros talleres educativos, diseñados para todas las edades. Desde actividades prácticas para niños hasta seminarios especializados para adultos, nuestros talleres ofrecen una oportunidad única para aprender sobre la biodiversidad, la conservación y el cuidado de los animales. Cada taller es impartido por expertos en la materia, garantizando una experiencia enriquecedora y educativa.</p>
-                
-                <h3>Guardianes de la Biodiversidad</h3>
-                <p>Un taller interactivo donde los participantes aprenden sobre la importancia de los ecosistemas, las especies en peligro y las acciones cotidianas que ayudan a proteger el medio ambiente. A través de dinámicas participativas y actividades prácticas, se fomenta el compromiso con la conservación de la fauna y la flora.</p>
-                <p><strong>Dirigido a:</strong> Niños y jóvenes</p>
-                
-                <h3>Introducción al Manejo Responsable de Fauna Silvestre</h3>
-                <p>En este taller los participantes conocen los principios básicos del manejo ético y seguro de animales silvestres en entornos controlados. Se explican protocolos de seguridad, bienestar animal y la importancia del respeto hacia cada especie. La actividad es guiada por personal capacitado y tiene un enfoque completamente educativo.</p>
-                <p><strong>Dirigido a:</strong> Público general y estudiantes</p>
+                <p>
+                    Participa en nuestros talleres educativos, diseñados para todas las edades. Desde actividades prácticas para niños hasta seminarios especializados para adultos, nuestros talleres ofrecen una oportunidad única para aprender sobre la biodiversidad, la conservación y el cuidado de los animales.
+                </p>
+
+                <!-- Taller 1 -->
+                <div class="taller" data-cupos="15">
+                    <h3>Guardianes de la Biodiversidad</h3>
+                    <p>
+                        Un taller interactivo donde los participantes aprenden sobre la importancia de los ecosistemas y las especies en peligro.
+                    </p>
+                    <p><strong>Dirigido a:</strong> Niños y jóvenes</p>
+                    <p><strong>Cupos disponibles:</strong> <span class="cupos">15</span></p>
+
+                    <form class="formTaller">
+                        <input type="text" placeholder="Nombre completo" required>
+                        <input type="email" placeholder="Correo electrónico" required>
+                        <button type="submit">Reservar lugar</button>
+                    </form>
+
+                    <p class="mensajeTaller"></p>
+                </div>
+
+                <!-- Taller 2 -->
+                <div class="taller" data-cupos="20">
+                    <h3>Introducción al Manejo Responsable de Fauna Silvestre</h3>
+                    <p>
+                        Taller sobre manejo ético y seguro de animales silvestres en entornos controlados.
+                    </p>
+                    <p><strong>Dirigido a:</strong> Público general y estudiantes</p>
+                    <p><strong>Cupos disponibles:</strong> <span class="cupos">20</span></p>
+
+                    <form class="formTaller">
+                        <input type="text" placeholder="Nombre completo" required>
+                        <input type="email" placeholder="Correo electrónico" required>
+                        <button type="submit">Reservar lugar</button>
+                    </form>
+
+                    <p class="mensajeTaller"></p>
+                </div>
+
             </article>
         </section>
 
@@ -94,6 +125,8 @@
         <footer>
             <p>&copy; 2024 Zootopia. Todos los derechos reservados.</p>
         </footer>
+        
+        <script type="text/javascript" src="Js/home.js"></script>
     </body>
 
 </div>
