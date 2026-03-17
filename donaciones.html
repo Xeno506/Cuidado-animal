@@ -1,97 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
-<div class="contenedor-principal">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Zootopia</title>
-        <link rel="icon" href="Imgs/zootopia.png" type="image/x-icon">
-        <link rel="stylesheet" href="Styles/styles.css" type="text/css">
-        <link rel="stylesheet" href="Styles/media.css" type="text/css">
-        
-    </head>
 
-    <body>
-        <header>
-            <h1>Bienvenido a Zootopia</h1>
-            <nav class="menu-principal">
-                <ul class="menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="animales.html">Animales</a></li>
-                    <li><a href="conservacion.html">Conservación</a></li>
-                    <li><a href="eventos.html">Eventos</a></li>
-                    <li><a href="horarios.html">Horarios y Precios</a></li>
-                    <li><a href="mapa.html">Mapa del Zoológico</a></li>
-                    <li><a href="donaciones.html">Donaciones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zootopia</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
 
-        <section class="apoyo">
-            <h2>Apoya Nuestro Santuario</h2>
-            <p>
-                Tu colaboración nos permite continuar con el rescate, rehabilitación y cuidado de especies silvestres.
-                Puedes apoyar mediante apadrinamiento o donaciones generales.
-            </p>
+<body>
 
-            <div class="bloque">
-                <h3>Programa de Apadrinamiento</h3>
-                <p>
-                    Apadrina una especie rescatada y contribuye directamente a su alimentación y atención veterinaria.
-                </p>
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">Zootopia</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#apadrinar">Apadrinar</a></li>
+                <li><a href="#donar">Donar</a></li>
+            </ul>
+        </nav>
+    </header>
 
-                <form id="formApadrinar">
-                    <label>Nombre completo:</label>
-                    <input type="text" id="nombreApadrinar" required>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Apoya Nuestro Santuario</h1>
+            <p>Tu ayuda permite rescatar y proteger especies en peligro.</p>
+        </div>
+    </section>
 
-                    <label>Correo electrónico:</label>
-                    <input type="email" id="correoApadrinar" required>
+    <!-- INTRO -->
+    <section class="about">
+        <div class="about-text">
+            <h2>Haz la diferencia</h2>
+            <p>Con tu apoyo podemos continuar con el rescate, rehabilitación y cuidado de animales silvestres.</p>
+        </div>
+    </section>
 
-                    <label>Especie a apadrinar:</label>
-                    <select id="especie">
-                        <option value="León">León</option>
-                        <option value="Ciervo">Ciervo</option>
-                        <option value="Guacamaya">Guacamaya</option>
-                        <option value="Serpiente">Serpiente</option>
-                    </select>
+    <!-- OPCIONES EN CARDS -->
+    <section class="products">
+        <h2>Formas de Ayudar</h2>
 
-                    <button type="submit">Confirmar Apadrinamiento</button>
-                </form>
+        <div class="cards">
 
-                <p id="mensajeApadrinar"></p>
+            <div class="card">
+                <h3>Apadrinar</h3>
+                <p>Apoya directamente a un animal.</p>
+                <a href="#apadrinar">Elegir →</a>
             </div>
 
-            <div class="bloque">
-                <h3>Donaciones Generales</h3>
-                <p>
-                    Tu aporte ayuda a mejorar las instalaciones del santuario y fortalecer nuestros programas de conservación.
-                </p>
+            <div class="card">
+                <h3>Donar</h3>
+                <p>Contribuye al desarrollo del santuario.</p>
+                <a href="#donar">Aportar →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- APADRINAMIENTO -->
+    <section id="apadrinar" class="about">
+        <div class="about-text">
+            <h2>Programa de Apadrinamiento</h2>
+            <p>Contribuye al cuidado directo de una especie rescatada.</p>
+
+            <form id="formApadrinar">
+                <input type="text" placeholder="Nombre completo" id="nombreApadrinar" required>
+                <input type="email" placeholder="Correo electrónico" id="correoApadrinar" required>
+
+                <select id="especie">
+                    <option value="León">León</option>
+                    <option value="Ciervo">Ciervo</option>
+                    <option value="Guacamaya">Guacamaya</option>
+                    <option value="Serpiente">Serpiente</option>
+                </select>
+
+                <button type="submit">Confirmar</button>
+            </form>
+
+            <p id="mensajeApadrinar"></p>
+        </div>
+    </section>
+
+    <!-- DONACIONES -->
+    <section id="donar" class="news">
+        <h2>Donaciones Generales</h2>
+
+        <div class="news-grid">
+
+            <div class="news-item">
+                <p>Tu aporte mejora instalaciones y programas de conservación.</p>
 
                 <form id="formDonacion">
-                    <label>Monto a donar: US$</label>
-                    <input type="number" id="montoDonacion" min="1" required>
-
-                    <button type="submit">Realizar Donación</button>
+                    <input type="number" id="montoDonacion" placeholder="Monto en US$" min="1" required>
+                    <button type="submit">Donar</button>
                 </form>
 
                 <p id="mensajeDonacion"></p>
             </div>
-            <div class="meta-container">
-            <h4>Meta mensual: $1000</h4>
+
+        </div>
+    </section>
+
+    <!-- META -->
+    <section class="about">
+        <div class="about-text">
+            <h2>Meta mensual</h2>
+
+            <p>$1000 objetivo</p>
+
             <div class="barra-fondo">
                 <div class="barra-progreso" id="barraProgreso"></div>
             </div>
-            <p>Total actual: $<span id="contadorAnimado">0</span></p>
-            </div>
-        </section>
-        
-        <footer>
-            <p>&copy; 2024 Zootopia. Todos los derechos reservados.</p>
-        </footer>
 
-        <script type="text/javascript" src="Js/home.js"></script>
-    </body>
-</div>
+            <p>Total recaudado: $<span id="contadorAnimado">0</span></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Zootopia</p>
+    </footer>
+
+    <script src="Js/donaciones.js" defer></script>
+
+</body>
 </html>

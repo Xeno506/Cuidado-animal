@@ -1,179 +1,197 @@
 <!DOCTYPE html>
 <html lang="es">
-<div class="contenedor-principal">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Zootopia</title>
-        <link rel="icon" href="Imgs/zootopia.png" type="image/x-icon">
-        <link rel="stylesheet" href="Styles/styles.css" type="text/css">
-        <link rel="stylesheet" href="Styles/media.css" type="text/css">
-    </head>
 
-    <body>
-        <header>
-            <h1>Nuestros animales en Zootopia</h1>
-            <nav class="menu-principal">
-                <ul class="menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="animales.html">Animales</a></li>
-                    <li><a href="conservacion.html">Conservación</a></li>
-                    <li><a href="eventos.html">Eventos</a></li>
-                    <li><a href="horarios.html">Horarios y Precios</a></li>
-                    <li><a href="mapa.html">Mapa del Zoológico</a></li>
-                    <li><a href="donaciones.html">Donaciones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zootopia</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
 
-        <section>
-            <article class="introduccion">
-                <h2>Explora la Diversidad de Nuestros Animales</h2>
-                <p>En Zootopia, nos enorgullece ofrecer a nuestros visitantes la oportunidad de conocer una amplia variedad de animales de todo el mundo. Desde majestuosos mamíferos hasta coloridas aves y fascinantes reptiles, cada especie tiene su propio espacio adaptado para garantizar su bienestar y ofrecer una experiencia educativa e inmersiva.</p>
+<body>
 
-                <h3>Conoce a Nuestros Habitantes</h3>
-                <p>Nuestro zoológico alberga una gran diversidad de animales, cada uno con su propia historia y características únicas. Desde los imponentes leones africanos hasta los juguetones monos capuchinos, cada especie es una ventana a la riqueza de la vida silvestre y una oportunidad para aprender sobre la importancia de la conservación.</p>
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">Zootopia</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#mamiferos">Mamíferos</a></li>
+                <li><a href="#aves">Aves</a></li>
+                <li><a href="#reptiles">Reptiles</a></li>
+                <li><a href="#peligro">En peligro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Explora la Diversidad de Nuestros Animales</h1>
+            <p>En Zootopia, nos enorgullece ofrecer a nuestros visitantes la oportunidad de conocer una amplia variedad de animales de todo el mundo. Desde majestuosos mamíferos hasta coloridas aves y fascinantes reptiles, cada especie tiene su propio espacio adaptado para garantizar su bienestar y ofrecer una experiencia educativa e inmersiva.</p>
+        </div>
+    </section>
+
+    <!-- INTRO (ANTES TEXTO LARGO) -->
+    <section class="about">
+        <div class="about-text">
+            <h2>Conoce a Nuestros Habitantes</h2>
+            <p>Nuestro zoológico alberga una gran diversidad de animales, cada uno con su propia historia y características únicas. Desde los imponentes leones africanos hasta los juguetones monos capuchinos, cada especie es una ventana a la riqueza de la vida silvestre y una oportunidad para aprender sobre la importancia de la conservación.</p>
                 
-                <h3>Comprometidos con la Conservación</h3>
-                <p>Trabajamos activamente en programas de reproducción en cautiverio, rescate de animales heridos y campañas de concientización para proteger a las especies en peligro de extinción. A través de actividades interactivas, visitas guiadas y talleres educativos, promovemos la conciencia ambiental y el cuidado del planeta.</p>
-        </section>
+            <h2>Comprometidos con la Conservación</h2>
+            <p>Trabajamos activamente en programas de reproducción en cautiverio, rescate de animales heridos y campañas de concientización para proteger a las especies en peligro de extinción. A través de actividades interactivas, visitas guiadas y talleres educativos, promovemos la conciencia ambiental y el cuidado del planeta.</p>
+            <p>Te invitamos a recorrer nuestros espacios, conocer historias sorprendentes de la vida silvestre y formar parte de nuestra misión: proteger y preservar la riqueza natural para las futuras generaciones.</p>
+        </div>
+    </section>
 
-        <section id="mamiferos">
-            <article class="destacados">
-                <h2>Mamiferos</h2>
-                <div class="galeria">
-                    <div class="animal">
-                        <img src="Imgs/leon.jpg" alt="León">
-                        <h3>León Africano</h3>
-                        <p><strong>Nombre Científico:</strong> Panthera leo</p>
-                        <p><strong>Hábitat Natural:</strong> Sabana africana</p>
-                        <p><strong>Dieta:</strong> Carnívoro</p>
-                        <p><strong>Curiosidades:</strong> El león es conocido como el "rey de la selva" debido a su melena majestuosa y su rugido imponente. Vive en manadas y es un símbolo de fuerza y liderazgo, además su rugido puede ser escuchado a 8 kilómetros de distancia.</p>
-                    </div>
-                    <div class="animal">
-                        <img src="Imgs/tigre.jpg" alt="Tigre">
-                        <h3>Tigre de Bengala</h3>
-                        <p><strong>Nombre Científico:</strong> Panthera tigris tigris</p>
-                        <p><strong>Hábitat Natural:</strong> Bosques y manglares de India y Bangladesh</p>
-                        <p><strong>Dieta:</strong> Carnívoro</p>
-                        <p><strong>Curiosidades:</strong> El tigre de Bengala es la subespecie de tigre más numerosa y es conocido por su pelaje rayado, que le proporciona camuflaje en su hábitat natural. Es un excelente nadador y puede recorrer grandes distancias en busca de presas.</p>
-                    </div>
-                    <div class="animal">
-                        <img src="Imgs/mono.jpg" alt="Mono">
-                        <h3>Mono Capuchino</h3>
-                        <p><strong>Nombre Científico:</strong> Cebus capucinus</p>
-                        <p><strong>Hábitat Natural:</strong> Bosques tropicales de América Central y del Sur</p>
-                        <p><strong>Dieta:</strong> Omnívoro</p>
-                        <p><strong>Curiosidades:</strong> Los monos capuchinos son conocidos por su inteligencia y habilidad para usar herramientas. Son muy sociales y viven en grupos llamados "manadas".</p>
-                    </div>
-                </div>
-            </article>
-        </section>
+    <!-- MAMIFEROS -->
+    <section id="mamiferos" class="products">
+        <h2>Mamíferos</h2>
 
-        <section id="aves">
-            <article class="destacados">
-                <h2>Aves</h2>
-                <div class="galeria">
-                    <div class="animal">
-                        <img src="Imgs/guacamayo.jpg" alt="Guacamayo">
-                        <h3>Guacamayo Azul y Amarillo</h3>
-                        <p><strong>Nombre Científico:</strong> Ara ararauna</p>
-                        <p><strong>Hábitat Natural:</strong> Selvas tropicales de América Central y del Sur</p>
-                        <p><strong>Dieta:</strong> Herbívoro</p>
-                        <p><strong>Curiosidades:</strong> El guacamayo azul y amarillo es conocido por su plumaje vibrante y su capacidad para imitar sonidos. Son aves sociales que viven en parejas o grupos pequeños.</p>
-                    </div>
-                    <div class="animal">
-                        <img src="Imgs/flamenco.jpg" alt="Flamenco">
-                        <h3>Flamenco Rosado</h3>
-                        <p><strong>Nombre Científico:</strong> Phoenicopterus roseus</p>
-                        <p><strong>Hábitat Natural:</strong> Lagunas saladas y estuarios de África, Asia y Europa</p>
-                        <p><strong>Dieta:</strong> Omnívoro</p>
-                        <p><strong>Curiosidades:</strong> El flamenco rosado obtiene su color característico de los carotenoides presentes en su dieta, que incluye algas y crustáceos. Son conocidos por su elegante postura y su habilidad para pararse sobre una pierna.</p>
-                    </div>
-                    <div class="animal">
-                        <img src="Imgs/aguila.jpg" alt="Águila">
-                        <h3>Águila Real</h3>
-                        <p><strong>Nombre Científico:</strong> Aquila chrysaetos</p>
-                        <p><strong>Hábitat Natural:</strong> Montañas, bosques y praderas de América del Norte, Europa y Asia</p>
-                        <p><strong>Dieta:</strong> Carnívoro</p>
-                        <p><strong>Curiosidades:</strong> El águila real es una de las aves rapaces más poderosas y majestuosas del mundo. Tiene una envergadura de hasta 2.3 metros y es conocida por su aguda visión, que le permite detectar presas a grandes distancias.</p>
-                    </div>
-                </div>
-            </article>
-        </section>
+        <div class="cards">
 
-        <section id="reptiles">
-            <article class="destacados">
-                <h2>Reptiles</h2>
-                <div class="galeria">
-                    <div class="animal">
-                        <img src="Imgs/cocodrilo.jpg" alt="Cocodrilo">
-                        <h3>Cocodrilo del Nilo</h3>
-                        <p><strong>Nombre Científico:</strong> Crocodylus niloticus</p>
-                        <p><strong>Hábitat Natural:</strong> Ríos, lagos y humedales de África subsahariana</p>
-                        <p><strong>Dieta:</strong> Carnívoro</p>
-                        <p><strong>Curiosidades:</strong> El cocodrilo del Nilo es uno de los reptiles más grandes del mundo, con algunos individuos que pueden superar los 6 metros de longitud. Son depredadores oportunistas y pueden cazar una amplia variedad de presas, desde peces hasta mamíferos grandes.</p>
-                    </div>
-                    <div class="animal">
-                        <img src="Imgs/serpiente.jpg" alt="Serpiente">
-                        <h3>Serpiente Pitón Reticulada</h3>
-                        <p><strong>Nombre Científico:</strong> Python reticulatus</p>
-                        <p><strong>Hábitat Natural:</strong> Selvas tropicales, pastizales y áreas cercanas a cuerpos de agua en el sudeste asiático</p>
-                        <p><strong>Dieta:</strong> Carnívoro</p>
-                        <p><strong>Curiosidades:</strong> La pitón reticulada es la serpiente más larga del mundo, con algunos individuos que pueden superar los 10 metros de longitud. Son constrictores, lo que significa que matan a sus presas apretándolas hasta que dejan de respirar.</p>
-                    </div>
-                    <div class="animal">
-                        <img src="Imgs/tortuga.jpg" alt="Tortuga">
-                        <h3>Tortuga de Galápagos</h3>
-                        <p><strong>Nombre Científico:</strong> Chelonoidis nigra</p>
-                        <p><strong>Hábitat Natural:</strong> Islas Galápagos, Ecuador</p>
-                        <p><strong>Dieta:</strong> Herbívoro</p>
-                        <p><strong>Curiosidades:</strong> Las tortugas de Galápagos son conocidas por su longevidad y capacidad de almacenar alimentos. Algunas pueden vivir más de 150 años. Son una especie endémica de las Islas Galápagos y son consideradas una especie en peligro de extinción.</p>
-                    </div>
-                </div>
-            </article>
-        </section>
+            <div class="card">
+                <img src="Imgs/leon.jpg">
+                <h3>León Africano</h3>
+                <p><strong>Nombre Científico:</strong> Panthera leo</p>
+                <p><strong>Hábitat Natural:</strong> Sabana africana</p>
+                <p><strong>Dieta:</strong> Carnívoro</p>
+                <p><strong>Curiosidades:</strong> El león es conocido como el "rey de la selva" debido a su melena majestuosa y su rugido imponente. Vive en manadas y es un símbolo de fuerza y liderazgo, además su rugido puede ser escuchado a 8 kilómetros de distancia.</p>
+            </div>
 
-        <section id="peligro">
-            <article class="destacados">
-                <h2>Especies en Peligro de Extinción</h2>
-                <div class="galeria">
-                    <div class="animal">
-                        <img src="Imgs/elefante.jpg" alt="Elefante">
-                        <h3>Elefante Asiático</h3>
-                        <p><strong>Nombre Científico:</strong> Elephas maximus</p>
-                        <p><strong>Hábitat Natural:</strong> Bosques tropicales de Asia</p>
-                        <p><strong>Dieta:</strong> Herbívoro</p>
-                        <p><strong>Curiosidades:</strong> El elefante asiático es una especie en peligro de extinción debido a la pérdida de hábitat y la caza furtiva. Es conocido por su inteligencia y memoria.</p>
-                    </div>
-                    <div class="animal">
-                        <img src="Imgs/pantera.jpg" alt="Pantera Negra">
-                        <h3>Pantera Negra</h3>
-                        <p><strong>Nombre Científico:</strong> Panthera pardus</p>
-                        <p><strong>Hábitat Natural:</strong> Bosques tropicales y selvas de Asia y África</p>
-                        <p><strong>Dieta:</strong> Carnívoro</p>
-                        <p><strong>Curiosidades:</strong> La pantera negra no es una especie distinta, sino una variante del leopardo o jaguar con pelaje negro. Es una especie en peligro de extinción debido a la pérdida de hábitat y la caza furtiva.</p>
-                    </div>
-                    <div class="animal">
-                        <img src="Imgs/mono-arana.jpg" alt="Mono Araña">
-                        <h3>Mono Araña</h3>
+            <div class="card">
+                <img src="Imgs/tigre.jpg">
+                <h3>Tigre de Bengala</h3>
+                <p><strong>Nombre Científico:</strong> Panthera tigris tigris</p>
+                <p><strong>Hábitat Natural:</strong> Bosques y manglares de India y Bangladesh</p>
+                <p><strong>Dieta:</strong> Carnívoro</p>
+                <p><strong>Curiosidades:</strong> El tigre de Bengala es la subespecie de tigre más numerosa y es conocido por su pelaje rayado, que le proporciona camuflaje en su hábitat natural. Es un excelente nadador y puede recorrer grandes distancias en busca de presas.</p>
+            </div>
+
+            <div class="card">
+                <img src="Imgs/mono.jpg">
+                <h3>Mono Capuchino</h3>
+                <p><strong>Nombre Científico:</strong> Cebus capucinus</p>
+                <p><strong>Hábitat Natural:</strong> Bosques tropicales de América Central y del Sur</p>
+                <p><strong>Dieta:</strong> Omnívoro</p>
+                <p><strong>Curiosidades:</strong> Los monos capuchinos son conocidos por su inteligencia y habilidad para usar herramientas. Son muy sociales y viven en grupos llamados "manadas".</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- AVES -->
+    <section id="aves" class="products">
+        <h2>Aves</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="Imgs/guacamayo.jpg">
+                <h3>Guacamayo Azul y Amarillo</h3>
+                <p><strong>Nombre Científico:</strong> Ara ararauna</p>
+                <p><strong>Hábitat Natural:</strong> Selvas tropicales de América Central y del Sur</p>
+                <p><strong>Dieta:</strong> Herbívoro</p>
+                <p><strong>Curiosidades:</strong> El guacamayo azul y amarillo es conocido por su plumaje vibrante y su capacidad para imitar sonidos. Son aves sociales que viven en parejas o grupos pequeños.</p>
+            </div>
+
+            <div class="card">
+                <img src="Imgs/flamenco.jpg">
+                <h3>Flamenco Rosado</h3>
+                <p><strong>Nombre Científico:</strong> Phoenicopterus roseus</p>
+                <p><strong>Hábitat Natural:</strong> Lagunas saladas y estuarios de África, Asia y Europa</p>
+                <p><strong>Dieta:</strong> Omnívoro</p>
+                <p><strong>Curiosidades:</strong> El flamenco rosado obtiene su color característico de los carotenoides presentes en su dieta, que incluye algas y crustáceos. Son conocidos por su elegante postura y su habilidad para pararse sobre una pierna.</p>
+            </div>
+
+            <div class="card">
+                <img src="Imgs/aguila.jpg">
+                <h3>Águila Real</h3>
+                <p><strong>Nombre Científico:</strong> Aquila chrysaetos</p>
+                <p><strong>Hábitat Natural:</strong> Montañas, bosques y praderas de América del Norte, Europa y Asia</p>
+                <p><strong>Dieta:</strong> Carnívoro</p>
+                <p><strong>Curiosidades:</strong> El águila real es una de las aves rapaces más poderosas y majestuosas del mundo. Tiene una envergadura de hasta 2.3 metros y es conocida por su aguda visión, que le permite detectar presas a grandes distancias.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- REPTILES -->
+    <section id="reptiles" class="products">
+        <h2>Reptiles</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="Imgs/cocodrilo.jpg">
+                <h3>Cocodrilo del Nilo</h3>
+                <p><strong>Nombre Científico:</strong> Crocodylus niloticus</p>
+                <p><strong>Hábitat Natural:</strong> Ríos, lagos y humedales de África subsahariana</p>
+                <p><strong>Dieta:</strong> Carnívoro</p>
+                <p><strong>Curiosidades:</strong> El cocodrilo del Nilo es uno de los reptiles más grandes del mundo, con algunos individuos que pueden superar los 6 metros de longitud. Son depredadores oportunistas y pueden cazar una amplia variedad de presas, desde peces hasta mamíferos grandes.</p>
+            </div>
+
+            <div class="card">
+                <img src="Imgs/serpiente.jpg">
+                <h3>Serpiente Pitón Reticulada</h3>
+                <p><strong>Nombre Científico:</strong> Python reticulatus</p>
+                <p><strong>Hábitat Natural:</strong> Selvas tropicales, pastizales y áreas cercanas a cuerpos de agua en el sudeste asiático</p>
+                <p><strong>Dieta:</strong> Carnívoro</p>
+                <p><strong>Curiosidades:</strong> La pitón reticulada es la serpiente más larga del mundo, con algunos individuos que pueden superar los 10 metros de longitud. Son constrictores, lo que significa que matan a sus presas apretándolas hasta que dejan de respirar.</p>
+            </div>
+
+            <div class="card">
+                <img src="Imgs/tortuga.jpg">
+                <h3>Tortuga de Galápagos</h3>
+                <p><strong>Nombre Científico:</strong> Chelonoidis nigra</p>
+                <p><strong>Hábitat Natural:</strong> Islas Galápagos, Ecuador</p>
+                <p><strong>Dieta:</strong> Herbívoro</p>
+                <p><strong>Curiosidades:</strong> Las tortugas de Galápagos son conocidas por su longevidad y capacidad de almacenar alimentos. Algunas pueden vivir más de 150 años. Son una especie endémica de las Islas Galápagos y son consideradas una especie en peligro de extinción.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EN PELIGRO -->
+    <section id="peligro" class="news">
+        <h2>Especies en peligro</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="Imgs/elefante.jpg">
+                <h3>Elefante Asiático</h3>
+                <p><strong>Nombre Científico:</strong> Elephas maximus</p>
+                <p><strong>Hábitat Natural:</strong> Bosques tropicales de Asia</p>
+                <p><strong>Dieta:</strong> Herbívoro</p>
+                <p><strong>Curiosidades:</strong> El elefante asiático es una especie en peligro de extinción debido a la pérdida de hábitat y la caza furtiva. Es conocido por su inteligencia y memoria.</p>
+
+            </div>
+
+            <div class="card">
+                <img src="Imgs/pantera.jpg">
+                <h3>Pantera Negra</h3>
+                <p><strong>Nombre Científico:</strong> Panthera pardus</p>
+                <p><strong>Hábitat Natural:</strong> Bosques tropicales y selvas de Asia y África</p>
+                <p><strong>Dieta:</strong> Carnívoro</p>
+                <p><strong>Curiosidades:</strong> La pantera negra no es una especie distinta, sino una variante del leopardo o jaguar con pelaje negro. Es una especie en peligro de extinción debido a la pérdida de hábitat y la caza furtiva.</p>
+            </div>
+
+            <div class="card">
+                <img src="Imgs/mono-arana.jpg">
+                <h3>Mono Araña</h3>
                         <p><strong>Nombre Científico:</strong> Brachycephalus eurygnathus</p>
                         <p><strong>Hábitat Natural:</strong> Bosques tropicales de Brasil</p>
                         <p><strong>Dieta:</strong> Omnívoro</p>
                         <p><strong>Curiosidades:</strong> El mono araña es una especie en peligro de extinción debido a la pérdida de hábitat. Es uno de los monos más pequeños del mundo, con una longitud corporal que puede ser menor a 10 centímetros.</p>
-                    </div>
-                </div>
-            </article>
-        </section>
+            </div>
 
-        <footer>
-            <p>&copy; 2024 Zootopia. Todos los derechos reservados.</p>
-        </footer>
-        
-        <script type="text/javascript" src="Js/home.js"></script>
-    </body>
-    
-</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Zootopia</p>
+    </footer>
+
+</body>
 </html>

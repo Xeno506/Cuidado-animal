@@ -1,3 +1,18 @@
+/* ================= VARIABLES (nivel pro silencioso) ================= */
+
+:root
+{
+    --verde-principal: #2f8f2f;
+    --verde-oscuro: #1e6305;
+    --verde-claro: #6ddf6d;
+    --fondo: #f5f7fa;
+    --texto: #333;
+    --blanco: #ffffff;
+}
+
+
+/* ================= AJUSTES GENERALES ================= */
+
 html 
 {
     scroll-behavior: smooth;
@@ -6,26 +21,30 @@ html
 body 
 {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: url("../Imgs/pastozoo.png") no-repeat center center fixed;
-    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--fondo);
+    color: var(--texto);
 }
 
-.contenedor-principal
-{
-    background-color: rgba(255, 255, 255, 0.92);
-    width: 85%;
-    margin: 30px auto;
-    padding: 20px;
-    border-radius: 12px;
-}
+
+/* ================= HEADER ================= */
 
 header 
 {
-    background-color: rgba(30, 99, 5, 0.85);
+    background: linear-gradient(135deg, var(--verde-oscuro), var(--verde-principal));
     color: white;
-    padding: 50px 30px;
+    padding: 30px 20px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 header ul.menu 
@@ -33,59 +52,192 @@ header ul.menu
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 25px;
     padding: 0;
-    margin: 20px 0 0 0;
+    margin-top: 15px;
 }
 
 header ul.menu li a
 {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
 header ul.menu li a:hover 
 {
-    color: #a6ff4d;
+    background-color: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
 }
 
-footer 
+
+/* ================= UL ================= */
+ul
 {
-    background-color: rgba(30, 99, 5, 0.9);
-    color: white;
-    text-align: center;
-    padding: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
+
+/* ================= FOOTER ================= */
+
+footer
+{
+    background-color: #1e6305;
+    color: white;
+    padding: 30px;
+}
+
+.footer-contenido
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-contenido div
+{
+    margin: 10px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero
+{
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                url("../Imgs/zoologico.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+}
+
+.hero-texto
+{
+    position: relative;
+    max-width: 500px;
+}
+
+.hero h1
+{
+    font-size: 42px;
+    margin-bottom: 10px;
+    text-shadow: 2px 4px 10px rgba(0,0,0,0.6);
+}
+
+.hero p
+{
+    font-size: 18px;
+    text-shadow: 1px 2px 6px rgba(0,0,0,0.5);
+}
+
+
+/* ================= SECCIONES ================= */
 
 section 
 {
-    padding: 50px 30px;
+    padding: 60px 30px;
+    animation: fadeIn 0.6s ease;
 }
 
-.animal, .conservacion, .eventos, .visita, .contacto
+@keyframes fadeIn
 {
-    background-color: #f4f8e8;
+    from
+    {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ================= TARJETAS (REUTILIZABLE) ================= */
+
+.card
+{
+    background: var(--blanco);
     padding: 25px;
     margin: 20px 0;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
+.card:hover
+{
+    transform: translateY(-6px);
+    box-shadow: 0 14px 35px rgba(0,0,0,0.12);
+}
+
+
+/* ================= GRID DE TARJETAS ================= */
+
+.cards
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+/* ================= TEXTO ================= */
 
 h2 
 {
     font-size: 30px;
     margin-bottom: 15px;
-    color: rgb(30, 99, 5);
+    color: var(--verde-oscuro);
 }
 
 p 
 {
     font-size: 17px;
     line-height: 1.7;
-    color: #333;
 }
+
+
+/* ================= IMÁGENES ================= */
+
+img
+{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.img-rescate
+{
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+}
+
+
+/* ================= GALERÍA ================= */
 
 .galeria 
 {
@@ -95,31 +247,8 @@ p
     justify-content: center;
 }
 
-img 
-{
-    width: 220px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 10px;
-}
 
-img.cautiverio, .mapa
-{
-    width: 100%;
-    height: auto;
-    max-width: 600px;
-    margin: 20px auto;
-    display: block;
-}
-
-img.rescate
-{
-    width: 100%;
-    height: 550px;
-    max-width: 600px;
-    margin: 20px auto;
-    display: block;
-}
+/* ================= BLOQUES ================= */
 
 blockquote 
 {
@@ -128,114 +257,60 @@ blockquote
     padding: 20px;
     margin: 20px 0;
     background-color: #f4f8e8;
-    border-left: 6px solid rgb(30, 99, 5);
+    border-left: 6px solid var(--verde-oscuro);
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.calendario table 
-{
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
-}
 
-.calendario th, .calendario td 
-{
-    border: 1px solid #ccc;
-    padding: 10px;
-    height: 80px;
-    vertical-align: top;
-}
-
-.calendario th 
-{
-    background-color: #d9e0a1;
-}
-
-.leyenda 
-{
-    background-color: #f4f8e8;
-    padding: 30px;
-    margin: 40px 20px;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-}
-
-.leyenda ul 
-{
-    list-style: none;
-    padding: 0;
-}
-
-.leyenda li 
-{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    font-size: 16px;
-}
-
-.icono 
-{
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    margin-right: 10px;
-    border-radius: 50%;
-}
-
-.entrada { background-color: #1e2c71; }
-.salida { background-color: #2f8f2f; }
-.info { background-color: #f4c542; }
-.banos { background-color: #5dade2; }
-.cafeteria { background-color: #d35400; }
-.veterinaria { background-color: #c0392b; }
-.conservacion2 { background-color: #27ae60; }
-.picnic { background-color: #a569bd; }
-.reptiles { background-color: #196f3d; }
-.aves { background-color: #f39c12; }
-.felinos { background-color: #b9770e; }
-
-.apoyo 
-{
-    padding: 40px 20px;
-}
-
-.bloque 
-{
-    background-color: #f4f8e8;
-    padding: 25px;
-    margin: 25px 0;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-}
+/* ================= FORMULARIOS ================= */
 
 form 
 {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
-input, select, button 
+input, select, textarea
 {
-    padding: 8px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: all 0.2s ease;
+}
+
+input:focus, select:focus, textarea:focus
+{
+    border-color: var(--verde-principal);
+    box-shadow: 0 0 0 3px rgba(47,143,47,0.2);
+    outline: none;
 }
 
 button 
 {
-    background-color: #2f8f2f;
+    background: linear-gradient(135deg, var(--verde-principal), var(--verde-oscuro));
     color: white;
     cursor: pointer;
+    border: none;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 10px;
+    transition: all 0.25s ease;
 }
 
 button:hover 
 {
-    background-color: #1e6f1e;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
+
+button:active
+{
+    transform: scale(0.97);
+}
+
+
+/* ================= BARRA DE PROGRESO ================= */
 
 .meta-container 
 {
@@ -245,8 +320,8 @@ button:hover
 .barra-fondo 
 {
     width: 100%;
-    height: 25px;
-    background-color: #ddd;
+    height: 20px;
+    background-color: #eee;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -255,6 +330,103 @@ button:hover
 {
     height: 100%;
     width: 0%;
-    background-color: #2f8f2f;
-    transition: width 0.5s ease-in-out;
+    background: linear-gradient(90deg, var(--verde-principal), var(--verde-claro));
+    transition: width 0.6s ease;
+}
+
+
+/* ================= CALENDARIO ================= */
+
+.calendario
+{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.calendario-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.calendario-header button
+{
+    background: var(--verde-principal);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.calendario-header button:hover
+{
+    background: var(--verde-oscuro);
+}
+
+.calendario td
+{
+    vertical-align: top;
+    position: relative;
+}
+
+.calendario td.evento
+{
+    background-color: #e8f7e8;
+    border: 2px solid var(--verde-principal);
+    font-weight: bold;
+}
+
+.calendario td small
+{
+    display: block;
+    margin-top: 5px;
+    font-size: 11px;
+}
+
+.calendario table
+{
+    margin: 0 auto;
+}
+
+
+
+/* ================= DETALLE PRO ================= */
+
+::selection
+{
+    background: var(--verde-principal);
+    color: white;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px)
+{
+    header ul.menu
+    {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero
+    {
+        height: 350px;
+        padding: 20px;
+    }
+
+    h2
+    {
+        font-size: 24px;
+    }
+
+    p
+    {
+        font-size: 15px;
+    }
 }

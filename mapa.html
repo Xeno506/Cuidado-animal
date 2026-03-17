@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
-<div class="contenedor-principal">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Zootopia</title>
-        <link rel="icon" href="Imgs/zootopia.png" type="image/x-icon">
-        <link rel="stylesheet" href="Styles/styles.css" type="text/css">
-        <link rel="stylesheet" href="Styles/media.css" type="text/css">
-    </head>
 
-    <body>
-        <header>
-            <h1>Mapa del Zoológico</h1>
-            <nav class="menu-principal">
-                <ul class="menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="animales.html">Animales</a></li>
-                    <li><a href="conservacion.html">Conservación</a></li>
-                    <li><a href="eventos.html">Eventos</a></li>
-                    <li><a href="horarios.html">Horarios y Precios</a></li>
-                    <li><a href="mapa.html">Mapa del Zoológico</a></li>
-                    <li><a href="donaciones.html">Donaciones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zootopia</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
 
-        <section class="contenido-principal">
-            <article class="introduccion">
-                <h2>Mapa del Zoológico de Zootopia</h2>
-                <p>Explora el mapa de nuestro zoológico para planificar tu visita y descubrir la ubicación de cada una de nuestras áreas temáticas, exhibiciones y servicios. Nuestro mapa te ayudará a orientarte dentro de nuestras instalaciones, permitiéndote aprovechar al máximo tu experiencia en Zootopia.</p>
-                <img class=mapa src="Imgs/mapa-zoo.png" alt="Mapa del Zoológico de Zootopia" class="mapa">
-            </article>
-        </section>
+<body>
 
-        <section class="leyenda">
-            <h2>Leyenda del Mapa</h2>
-
-            <ul>
-                <li><span class="icono entrada"></span> Entrada Principal</li>
-                <li><span class="icono salida"></span> Salida</li>
-                <li><span class="icono info"></span> Punto de Información</li>
-                <li><span class="icono banos"></span> Baños</li>
-                <li><span class="icono cafeteria"></span> Cafetería</li>
-                <li><span class="icono veterinaria"></span> Centro Veterinario</li>
-                <li><span class="icono conservacion2"></span> Área de Conservación</li>
-                <li><span class="icono picnic"></span> Zona de Picnic</li>
-                <li><span class="icono reptiles"></span> Zona de Reptiles</li>
-                <li><span class="icono aves"></span> Zona de Aves</li>
-                <li><span class="icono felinos"></span> Grandes Felinos</li>
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">Zootopia</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#mapa">Mapa</a></li>
+                <li><a href="#leyenda">Leyenda</a></li>
             </ul>
-        </section>
+        </nav>
+    </header>
 
-        <footer>
-            <p>&copy; 2024 Zootopia. Todos los derechos reservados.</p>
-        </footer>
-        
-        <script type="text/javascript" src="Js/home.js"></script>
-    </body>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Mapa del Zoológico</h1>
+            <p>Ubícate y explora cada rincón de Zootopia.</p>
+        </div>
+    </section>
 
-</div>
+    <!-- INTRO -->
+    <section class="about">
+        <div class="about-text">
+            <h2>Explora el parque</h2>
+            <p>Utiliza el mapa para planificar tu recorrido y encontrar fácilmente cada área temática y servicio.</p>
+        </div>
+    </section>
+
+    <!-- MAPA PRINCIPAL -->
+    <section id="mapa" class="map-section">
+        <h2>Mapa Interactivo</h2>
+
+        <div class="map-container">
+            <img src="Imgs/mapa-zoo.png" alt="Mapa del Zoológico">
+        </div>
+    </section>
+
+    <!-- LEYENDA EN FORMATO VISUAL -->
+    <section id="leyenda" class="products">
+        <h2>Leyenda</h2>
+
+        <div class="cards">
+
+            <div class="card"><p>Entrada Principal</p></div>
+            <div class="card"><p>Salida</p></div>
+            <div class="card"><p>Punto de Información</p></div>
+            <div class="card"><p>Baños</p></div>
+            <div class="card"><p>Cafetería</p></div>
+            <div class="card"><p>Centro Veterinario</p></div>
+            <div class="card"><p>Área de Conservación</p></div>
+            <div class="card"><p>Zona de Picnic</p></div>
+            <div class="card"><p>Reptiles</p></div>
+            <div class="card"><p>Aves</p></div>
+            <div class="card"><p>Grandes Felinos</p></div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Zootopia</p>
+    </footer>
+
+    <script src="Js/home.js"></script>
+
+</body>
 </html>

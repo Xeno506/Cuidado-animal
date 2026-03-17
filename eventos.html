@@ -1,133 +1,162 @@
 <!DOCTYPE html>
 <html lang="es">
-<div class="contenedor-principal">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Zootopia</title>
-        <link rel="icon" href="Imgs/zootopia.png" type="image/x-icon">
-        <link rel="stylesheet" href="Styles/styles.css" type="text/css">
-        <link rel="stylesheet" href="Styles/media.css" type="text/css">
-    </head>
 
-    <body>
-        <header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zootopia</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">Zootopia</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#visitas">Visitas</a></li>
+                <li><a href="#talleres">Talleres</a></li>
+                <li><a href="#celebraciones">Eventos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
             <h1>Eventos Especiales en Zootopia</h1>
-            <nav class="menu-principal">
-                <ul class="menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="animales.html">Animales</a></li>
-                    <li><a href="conservacion.html">Conservación</a></li>
-                    <li><a href="eventos.html">Eventos</a></li>
-                    <li><a href="horarios.html">Horarios y Precios</a></li>
-                    <li><a href="mapa.html">Mapa del Zoológico</a></li>
-                    <li><a href="donaciones.html">Donaciones</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+            <p>En Zootopia, organizamos una variedad de eventos especiales a lo largo del año para ofrecer a nuestros visitantes experiencias únicas y educativas. Desde talleres interactivos hasta celebraciones temáticas, nuestros eventos están diseñados para fomentar el aprendizaje, la diversión y la conexión con la naturaleza.</p>
+        </div>
+    </section>
 
-        <section class="contenido-principal">
-            <article class="introduccion">
-                <h2>Eventos Especiales en Zootopia</h2>
-                <p>En Zootopia, organizamos una variedad de eventos especiales a lo largo del año para ofrecer a nuestros visitantes experiencias únicas y educativas. Desde talleres interactivos hasta celebraciones temáticas, nuestros eventos están diseñados para fomentar el aprendizaje, la diversión y la conexión con la naturaleza.</p>
+    <!-- INTRO -->
+    <section class="about">
+        <div class="about-text">
+            <h2>Vive la experiencia Zootopia</h2>
+            <p>Organizamos eventos educativos y recreativos diseñados para todas las edades.</p>
+            <p>Desde talleres hasta actividades guiadas, cada experiencia busca inspirar respeto por la vida silvestre.</p>
+        </div>
+    </section>
 
-                <h3>Próximos Eventos</h3>
-                <ul>
-                    <li><a href="#talleres">Talleres Educativos</a></li>
-                    <li><a href="#celebraciones">Celebraciones Temáticas</a></li>
-                    <li><a href="#visitas-guiadas">Visitas Guiadas Especiales</a></li>
-                </ul>
-            </article>
-        </section>
-        <section id="visitas-guiadas">
-            <article class="destacados">
-                <h2>Visitas Guiadas Especiales</h2>
-                <p>Disfruta de nuestras visitas guiadas especiales, diseñadas para ofrecer una experiencia única y educativa. Nuestros guías expertos te llevarán a descubrir los secretos del zoológico y compartirán conocimientos sobre los animales que habitan en Zootopia.</p>
-                
-                <h3>Alimentación Guiada de Ciervos</h3>
-                <p>Cada fin de semana ofrecemos una experiencia educativa de alimentación supervisada de ciervos, donde los visitantes pueden conocer de cerca sus hábitos alimenticios y comportamiento natural. La actividad es dirigida por nuestro equipo especializado, quien explica la importancia de una dieta equilibrada y el respeto por el espacio de los animales. Esta experiencia está diseñada para fomentar la conexión responsable con la fauna silvestre.</p>
-                <img class="alimentacion" src="Imgs/evento-ciervo.jpg" alt="Alimentación Guiada de Ciervos">
-                
-                <h3>Noche en el Zoológico</h3>
-                <p>Una experiencia nocturna guiada donde los visitantes pueden observar el comportamiento de ciertas especies en horarios diferentes a los habituales. Incluye recorridos temáticos, actividades educativas y espacios de aprendizaje sobre los hábitos nocturnos de la fauna.</p>
+    <!-- RESUMEN EN CARDS -->
+    <section class="products">
+        <h2>Tipos de Eventos</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Visitas Guiadas</h3>
+                <p>Recorridos educativos con expertos.</p>
+                <a href="#visitas">Explorar →</a>
+            </div>
+
+            <div class="card">
+                <h3>Talleres</h3>
+                <p>Aprendizaje práctico sobre biodiversidad.</p>
+                <a href="#talleres">Ver talleres →</a>
+            </div>
+
+            <div class="card">
+                <h3>Celebraciones</h3>
+                <p>Eventos temáticos y festivales.</p>
+                <a href="#celebraciones">Descubrir →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- VISITAS -->
+    <section id="visitas" class="about">
+
+        <div class="about-text">
+            <h2>Visitas Guiadas Especiales</h2>
+            <p>Disfruta de nuestras visitas guiadas especiales, diseñadas para ofrecer una experiencia única y educativa. Nuestros guías expertos te llevarán a descubrir los secretos del zoológico y compartirán conocimientos sobre los animales que habitan en Zootopia.</p>
             
-                <h3>Demostración Guiada de Reptiles</h3>
-                <p>Durante la semana realizamos sesiones educativas sobre reptiles, donde especialistas en herpetología presentan serpientes no venenosas bajo estrictos protocolos de seguridad. Los asistentes aprenden sobre su importancia ecológica, mitos comunes y medidas de conservación. La manipulación es realizada únicamente por personal capacitado, garantizando el bienestar del animal y la seguridad del público.</p>
-                <img class="reptiles" src="Imgs/evento-serpiente.jpg" alt="Demostración Guiada de Reptiles">
-            </article>
-        </section>
+            <img src="Imgs/evento-ciervo.jpg">
+            <h3>Alimentación Guiada de Ciervos</h3>
+            <p>Cada fin de semana ofrecemos una experiencia educativa de alimentación supervisada de ciervos, donde los visitantes pueden conocer de cerca sus hábitos alimenticios y comportamiento natural. La actividad es dirigida por nuestro equipo especializado, quien explica la importancia de una dieta equilibrada y el respeto por el espacio de los animales. Esta experiencia está diseñada para fomentar la conexión responsable con la fauna silvestre.</p>
+            
+            <h3>Noche en el Zoológico</h3>
+            <p>Una experiencia nocturna guiada donde los visitantes pueden observar el comportamiento de ciertas especies en horarios diferentes a los habituales. Incluye recorridos temáticos, actividades educativas y espacios de aprendizaje sobre los hábitos nocturnos de la fauna.</p>
+        
+            <img src="Imgs/evento-serpiente.jpg">
+            <h3>Demostración Guiada de Reptiles</h3>
+            <p>Durante la semana realizamos sesiones educativas sobre reptiles, donde especialistas en herpetología presentan serpientes no venenosas bajo estrictos protocolos de seguridad. Los asistentes aprenden sobre su importancia ecológica, mitos comunes y medidas de conservación. La manipulación es realizada únicamente por personal capacitado, garantizando el bienestar del animal y la seguridad del público.</p> 
+        </div>
+    </section>
 
-        <section id="talleres">
-            <article class="destacados">
-                <h2>Talleres Educativos</h2>
-                <p>
-                    Participa en nuestros talleres educativos, diseñados para todas las edades. Desde actividades prácticas para niños hasta seminarios especializados para adultos, nuestros talleres ofrecen una oportunidad única para aprender sobre la biodiversidad, la conservación y el cuidado de los animales.
-                </p>
+    <!-- TALLERES -->
+    <section id="talleres" class="news">
+        <h2>Talleres Educativos</h2>
 
-                <!-- Taller 1 -->
-                <div class="taller" data-cupos="15">
-                    <h3>Guardianes de la Biodiversidad</h3>
-                    <p>
-                        Un taller interactivo donde los participantes aprenden sobre la importancia de los ecosistemas y las especies en peligro.
-                    </p>
-                    <p><strong>Dirigido a:</strong> Niños y jóvenes</p>
-                    <p><strong>Cupos disponibles:</strong> <span class="cupos">15</span></p>
+        <div class="news-grid">
 
-                    <form class="formTaller">
-                        <input type="text" placeholder="Nombre completo" required>
-                        <input type="email" placeholder="Correo electrónico" required>
-                        <button type="submit">Reservar lugar</button>
-                    </form>
+            <div class="news-item taller" data-cupos="15">
+                <h4>Guardianes de la Biodiversidad</h4>
+                <p>Un taller interactivo donde los participantes aprenden sobre la importancia de los ecosistemas y las especies en peligro.</p>
+                <p><strong>Cupos:</strong> <span class="cupos">15</span></p>
 
-                    <p class="mensajeTaller"></p>
-                </div>
+                <form class="formTaller">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Correo" required>
+                    <button type="submit">Reservar</button>
+                </form>
 
-                <!-- Taller 2 -->
-                <div class="taller" data-cupos="20">
-                    <h3>Introducción al Manejo Responsable de Fauna Silvestre</h3>
-                    <p>
-                        Taller sobre manejo ético y seguro de animales silvestres en entornos controlados.
-                    </p>
-                    <p><strong>Dirigido a:</strong> Público general y estudiantes</p>
-                    <p><strong>Cupos disponibles:</strong> <span class="cupos">20</span></p>
+                <p class="mensajeTaller"></p>
+            </div>
 
-                    <form class="formTaller">
-                        <input type="text" placeholder="Nombre completo" required>
-                        <input type="email" placeholder="Correo electrónico" required>
-                        <button type="submit">Reservar lugar</button>
-                    </form>
+            <div class="news-item taller" data-cupos="20">
+                <h4>Introducción al Manejo Responsable de Fauna Silvestre</h4>
+                <p>Taller sobre manejo ético y seguro de animales silvestres en entornos controlados.</p>
+                <p><strong>Cupos:</strong> <span class="cupos">20</span></p>
 
-                    <p class="mensajeTaller"></p>
-                </div>
+                <form class="formTaller">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Correo" required>
+                    <button type="submit">Reservar</button>
+                </form>
 
-            </article>
-        </section>
+                <p class="mensajeTaller"></p>
+            </div>
 
-        <section id="celebraciones">
-            <article class="destacados">
-                <h2>Celebraciones Temáticas</h2>
-                <p>Únete a nuestras celebraciones temáticas, donde cada evento está diseñado para destacar la belleza y diversidad de la vida silvestre. Desde festivales de aves hasta días dedicados a los grandes felinos, nuestras celebraciones ofrecen una experiencia festiva y educativa para toda la familia. Disfruta de actividades especiales, exhibiciones interactivas y la oportunidad de aprender sobre la importancia de cada especie en nuestro planeta.</p>
-                
+        </div>
+    </section>
+
+    <!-- CELEBRACIONES -->
+    <section id="celebraciones" class="products">
+        <h2>Celebraciones Temáticas</h2>
+        <p>Únete a nuestras celebraciones temáticas, donde cada evento está diseñado para destacar la belleza y diversidad de la vida silvestre. Desde festivales de aves hasta días dedicados a los grandes felinos, nuestras celebraciones ofrecen una experiencia festiva y educativa para toda la familia. Disfruta de actividades especiales, exhibiciones interactivas y la oportunidad de aprender sobre la importancia de cada especie en nuestro planeta.</p>
+
+        <div class="cards">
+
+            <div class="card">
                 <h3>Semana de las Especies en Peligro</h3>
                 <p>Una semana dedicada a la sensibilización sobre especies amenazadas. Incluye charlas especiales, exposiciones educativas y actividades interactivas para toda la familia. Durante este evento se destacan los esfuerzos de conservación y los programas de reproducción en cautiverio del zoológico.</p>
+                <p><strong>Incluye:</strong> Charlas informativas, actividades para niños y recorridos temáticos.</p>
+            </div>
 
+            <div class="card">
                 <h3>Festival de las Aves</h3>
                 <p>Un evento especial dedicado a la diversidad y belleza del mundo aviar. Durante el festival se realizan exhibiciones educativas sobre especies locales y exóticas, charlas sobre migración y conservación, así como actividades interactivas para aprender sobre la importancia ecológica de las aves. Los visitantes podrán conocer más sobre sus hábitats, comportamientos y los desafíos que enfrentan en la actualidad.</p>
                 <p><strong>Incluye:</strong> Charlas educativas, actividades familiares y recorridos temáticos.</p>
-            
+            </div>
+
+            <div class="card">
                 <h3>Día de los Grandes Felinos</h3>
                 <p>Una jornada dedicada a conocer la biología, comportamiento y conservación de los grandes felinos. A través de charlas especializadas, recorridos guiados y actividades educativas, los visitantes aprenderán sobre el papel fundamental que estos depredadores desempeñan en el equilibrio de los ecosistemas y los esfuerzos internacionales para su protección.</p>
                 <p><strong>Incluye:</strong> Conferencias informativas, actividades temáticas y dinámicas educativas para todas las edades.</p>
-            </article>
+            </div>
 
-        <footer>
-            <p>&copy; 2024 Zootopia. Todos los derechos reservados.</p>
-        </footer>
-        
-        <script type="text/javascript" src="Js/home.js"></script>
-    </body>
+        </div>
+    </section>
 
-</div>
+    <footer>
+        <p>&copy; 2024 Zootopia</p>
+    </footer>
+
+    <script src="Js/home.js"></script>
+
+</body>
 </html>
