@@ -59,11 +59,16 @@
         </div>
     </section>
 
-    <!-- APADRINAMIENTO -->
+   <!-- APADRINAMIENTO -->
     <section id="apadrinar" class="about">
         <div class="about-text">
             <h2>Programa de Apadrinamiento</h2>
-            <p>Contribuye al cuidado directo de una especie rescatada.</p>
+
+            <p>
+                Contribuye al cuidado directo de una especie rescatada.
+                Al apadrinar, aceptas un pago mensual automático y recibirás
+                fotos e información exclusiva del animal apadrinado.
+            </p>
 
             <form id="formApadrinar">
                 <input type="text" placeholder="Nombre completo" id="nombreApadrinar" required>
@@ -76,8 +81,27 @@
                     <option value="Serpiente">Serpiente</option>
                 </select>
 
-                <button type="submit">Confirmar</button>
+                <p><strong>Suscripción mensual: $10 USD</strong></p>
+
+                <button type="submit">Apadrinar</button>
             </form>
+
+            <!-- SUBMENÚ DE PAGO -->
+            <div id="formPagoApadrinar" style="display:none; margin-top:15px;">
+                <h3>Datos de la tarjeta</h3>
+
+                <input type="text" id="nombreTarjetaA" placeholder="Nombre del propietario" required>
+                <input type="text" id="tarjetaA" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                <input type="text" id="fechaA" placeholder="MM/AA" maxlength="5" required>
+                <input type="password" id="cvvA" placeholder="CVV" maxlength="4" required>
+
+                <div id="tipoTarjetaA"></div>
+
+                <br><br>
+
+                <button id="confirmarApadrinamiento">Confirmar Suscripción</button>
+                <button id="cancelarApadrinamiento">Cancelar</button>
+            </div>
 
             <p id="mensajeApadrinar"></p>
         </div>
@@ -88,18 +112,38 @@
         <h2>Donaciones Generales</h2>
 
         <div class="news-grid">
-
             <div class="news-item">
+
                 <p>Tu aporte mejora instalaciones y programas de conservación.</p>
 
+                <!-- FORMULARIO INICIAL -->
                 <form id="formDonacion">
                     <input type="number" id="montoDonacion" placeholder="Monto en US$" min="1" required>
                     <button type="submit">Donar</button>
                 </form>
 
-                <p id="mensajeDonacion"></p>
-            </div>
+                <!-- SUBMENÚ DE PAGO (oculto al inicio) -->
+                <div id="formPago" style="display:none; margin-top:15px;">
+                    <h3>Datos de la tarjeta</h3>
 
+                    <input type="text" id="nombre" placeholder="Nombre del propietario" required>
+
+                    <input type="text" id="tarjeta" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                    <!-- Icono de la tarjeta -->
+                    <div id="tipoTarjeta" style="margin-top:5px; font-weight:bold;"></div>
+
+                    <input type="text" id="fecha" placeholder="MM/AA" maxlength="5" required>
+                    <input type="password" id="cvv" placeholder="CVV" maxlength="4" required>
+
+                    <br><br>
+
+                    <button id="confirmarPago">Confirmar Pago</button>
+                    <button id="cancelarPago">Cancelar</button>
+                </div>
+
+                <p id="mensajeDonacion"></p>
+
+            </div>
         </div>
     </section>
 

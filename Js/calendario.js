@@ -1,4 +1,5 @@
- /* ================= CALENDARIO ================= */
+/* ================= CALENDARIO ================= */
+
     const diasContainer = document.getElementById("diasCalendario");
     const mesActualTexto = document.getElementById("mesActual");
 
